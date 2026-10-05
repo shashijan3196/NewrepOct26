@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="user" value="shashi"/>
+  <parameter name="url" value="shashi.com"/>
+  <listeners>
+    <listener class-name="TestNG.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestNG.TestNG1">
+        <methods>
+          <include name="test6"/>
+          <include name="test3"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- TestNG.TestNG1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
